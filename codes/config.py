@@ -258,10 +258,10 @@ class KaggleBowlConfig(Config):
 
 
 # Root directory of the project
-ROOT_DIR = '../data/'
+ROOT_DIR = 'data_science_bowl_2018/data/'
 
 # Directory to save logs and trained model
-MODEL_DIR = '../data/logs'
+MODEL_DIR = 'data_science_bowl_2018/data/logs'
 
 
 def load_img(fname, color='RGB'):
