@@ -97,7 +97,7 @@ def train_validation_split(train_path, seed=10, test_size=0.1):
     external_ids = list(filter(lambda x: 'TCGA' in x, os.listdir(train_path)))
 
     # Load and preprocess the dataset with train image modalities
-    df = pd.read_csv('../data/classes.csv')
+    df = pd.read_csv('data_science_bowl_2018/data/classes.csv')
     df['labels'] = df['foreground'].astype(str) + df['background']
     df['filename'] = df['filename'].apply(lambda x: x[:-4])
     df = df.set_index('filename')
